@@ -1,7 +1,7 @@
 # Kits
 
-This plugin create kits for the people who have the perms indicated in Permissions
-You can only choose one Kit per round if you have the 4 kits permissions
+This plugin create kits for the people who have the perms indicated in Permissions.
+You can only choose one Kit per round if you have the 4 kits permissions.
 The kits are only for MTFs!
 
 ## Permissions
