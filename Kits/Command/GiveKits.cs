@@ -14,7 +14,7 @@ namespace Kits.Command
 
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
-            if (!sender.CheckPermission("kits.safe"))
+            if (!sender.CheckPermission(MainClass.singleton.Config.KitSafePermission))
             {
                 response = "You dont have perms to execute this command";
                 return false;
@@ -57,7 +57,7 @@ namespace Kits.Command
 
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
-            if (!sender.CheckPermission("kits.euclid"))
+            if (!sender.CheckPermission(MainClass.singleton.Config.KitEuclidPermission))
             {
                 response = "You dont have perms to execute this command";
                 return false;
@@ -100,7 +100,7 @@ namespace Kits.Command
 
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
-            if (!sender.CheckPermission("kits.ketter"))
+            if (!sender.CheckPermission(MainClass.singleton.Config.KitKetterPermission))
             {
                 response = "You dont have perms to execute this command";
                 return false;
@@ -142,7 +142,7 @@ namespace Kits.Command
 
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
-            if (!sender.CheckPermission("kits.apollyon"))
+            if (!sender.CheckPermission(MainClass.singleton.Config.KitApollyonPermission))
             {
                 response = "You dont have perms to execute this command";
                 return false;
