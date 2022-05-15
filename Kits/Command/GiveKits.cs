@@ -33,10 +33,9 @@ namespace Kits.Command
                 return false;
             }
 
-            if (p.Role.Type != RoleType.NtfCaptain && p.Role.Type != RoleType.NtfPrivate &&
-                p.Role.Type != RoleType.NtfSergeant && p.Role.Type != RoleType.NtfSpecialist)
+            if (MainClass.singleton.Config.RestrictedRolesForKits.Contains(p.Role.Type))
             {
-                response = "You aren't a NTF";
+                response = "You can't use kits with this role, this role is restricted in the config";
                 return false;
             }
 
@@ -76,10 +75,9 @@ namespace Kits.Command
                 return false;
             }
 
-            if (p.Role.Type != RoleType.NtfCaptain && p.Role.Type != RoleType.NtfPrivate &&
-                p.Role.Type != RoleType.NtfSergeant && p.Role.Type != RoleType.NtfSpecialist)
+            if (MainClass.singleton.Config.RestrictedRolesForKits.Contains(p.Role.Type))
             {
-                response = "You aren't a NTF";
+                response = "You can't use kits with this role, this role is restricted in the config";
                 return false;
             }
 
@@ -119,10 +117,9 @@ namespace Kits.Command
                 return false;
             }
 
-            if (p.Role.Type != RoleType.NtfCaptain && p.Role.Type != RoleType.NtfPrivate &&
-                p.Role.Type != RoleType.NtfSergeant && p.Role.Type != RoleType.NtfSpecialist)
+            if (MainClass.singleton.Config.RestrictedRolesForKits.Contains(p.Role.Type))
             {
-                response = "You aren't a NTF";
+                response = "You can't use kits with this role, this role is restricted in the config";
                 return false;
             }
 
@@ -161,10 +158,9 @@ namespace Kits.Command
                 return false;
             }
 
-            if (p.Role.Type != RoleType.NtfCaptain && p.Role.Type != RoleType.NtfPrivate &&
-                p.Role.Type != RoleType.NtfSergeant && p.Role.Type != RoleType.NtfSpecialist)
+            if (MainClass.singleton.Config.RestrictedRolesForKits.Contains(p.Role.Type))
             {
-                response = "You aren't a NTF";
+                response = "You can't use kits with this role, this role is restricted in the config";
                 return false;
             }
 

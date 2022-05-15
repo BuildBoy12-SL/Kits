@@ -25,5 +25,11 @@ namespace Kits
         public List<ItemType> KitApollyon { get; set; } = new List<ItemType>()
         {
         };
+
+        public List<RoleType> RestrictedRolesForKits { get; set; } = new List<RoleType>()
+        {
+            RoleType.ClassD,
+            RoleType.Scientist
+        };
     }
 }
