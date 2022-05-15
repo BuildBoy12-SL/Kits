@@ -4,7 +4,7 @@
     {
         public void OnRestartingRound()
         {
-            Checker.OneTimePerRound = true;
+            MainClass.singleton.OneTimePerRound = true;
         }
     }
 }

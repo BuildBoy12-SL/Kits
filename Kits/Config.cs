@@ -1,4 +1,5 @@
-﻿using Exiled.API.Interfaces;
+﻿using System.Collections.Generic;
+using Exiled.API.Interfaces;
 
 namespace Kits
 {
@@ -9,5 +10,20 @@ namespace Kits
         public string KitEuclidPermission { get; set; } = "kits.euclid";
         public string KitKetterPermission { get; set; } = "kits.ketter";
         public string KitApollyonPermission { get; set; } = "kits.apollyon";
+        
+        public List<ItemType> KitSafe { get; set; } = new List<ItemType>()
+        {
+        };
+
+        public List<ItemType> KitEuclid { get; set; } = new List<ItemType>()
+        {
+        };
+
+        public List<ItemType> KitKetter { get; set; } = new List<ItemType>()
+        {
+        };
+        public List<ItemType> KitApollyon { get; set; } = new List<ItemType>()
+        {
+        };
     }
 }

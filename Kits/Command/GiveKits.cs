@@ -27,7 +27,7 @@ namespace Kits.Command
                 return false;
             }
 
-            if (!Checker.OneTimePerRound)
+            if (!MainClass.singleton.OneTimePerRound)
             {
                 response = "You used the kit, you cant use it again this round";
                 return false;
@@ -40,8 +40,8 @@ namespace Kits.Command
                 return false;
             }
 
-            p.AddItem(Kits.KitSafe);
-            Checker.OneTimePerRound = false;
+            p.AddItem(MainClass.singleton.Config.KitSafe);
+            MainClass.singleton.OneTimePerRound = false;
 
             response = "Done!";
             return true;
@@ -70,7 +70,7 @@ namespace Kits.Command
                 return false;
             }
 
-            if (!Checker.OneTimePerRound)
+            if (!MainClass.singleton.OneTimePerRound)
             {
                 response = "You used the kit, you cant use it again this round";
                 return false;
@@ -83,8 +83,8 @@ namespace Kits.Command
                 return false;
             }
 
-            p.AddItem(Kits.KitEuclid);
-            Checker.OneTimePerRound = false;
+            p.AddItem(MainClass.singleton.Config.KitEuclid);
+            MainClass.singleton.OneTimePerRound = false;
 
             response = "Done!";
             return true;
@@ -113,7 +113,7 @@ namespace Kits.Command
                 return false;
             }
 
-            if (!Checker.OneTimePerRound)
+            if (!MainClass.singleton.OneTimePerRound)
             {
                 response = "You used the kit, you cant use it again this round";
                 return false;
@@ -126,8 +126,8 @@ namespace Kits.Command
                 return false;
             }
 
-            p.AddItem(Kits.KitKetter);
-            Checker.OneTimePerRound = false;
+            p.AddItem(MainClass.singleton.Config.KitKetter);
+            MainClass.singleton.OneTimePerRound = false;
 
             response = "Done!";
             return true;
@@ -155,7 +155,7 @@ namespace Kits.Command
                 return false;
             }
 
-            if (!Checker.OneTimePerRound)
+            if (!MainClass.singleton.OneTimePerRound)
             {
                 response = "You used the kit, you cant use it again this round";
                 return false;
@@ -168,8 +168,8 @@ namespace Kits.Command
                 return false;
             }
 
-            p.AddItem(Kits.KitApollyon);
-            Checker.OneTimePerRound = false;
+            p.AddItem(MainClass.singleton.Config.KitApollyon);
+            MainClass.singleton.OneTimePerRound = false;
 
             response = "Done!";
             return true;

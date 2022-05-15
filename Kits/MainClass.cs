@@ -14,7 +14,8 @@ namespace Kits
         public override Version Version { get; } = new Version(0, 2, 0);
         public override Version RequiredExiledVersion { get; } = new Version(5, 2, 1);
 
-        public EventHandlers ev;
+        private EventHandlers ev;
+        public bool OneTimePerRound = true;
 
         public override void OnEnabled()
         {
