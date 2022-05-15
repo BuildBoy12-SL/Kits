@@ -11,7 +11,7 @@ namespace Kits
         public override string Author { get; } = "xNexus-ACS";
         public override string Name { get; } = "Kits";
         public override string Prefix { get; } = "kits";
-        public override Version Version { get; } = new Version(0, 2, 0);
+        public override Version Version { get; } = new Version(0, 3, 0);
         public override Version RequiredExiledVersion { get; } = new Version(5, 2, 1);
 
         private EventHandlers ev;
