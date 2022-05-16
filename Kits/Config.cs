@@ -1,35 +1,33 @@
-﻿using System.Collections.Generic;
-using Exiled.API.Interfaces;
+﻿// -----------------------------------------------------------------------
+// <copyright file="Config.cs" company="xNexus-ACS">
+// Copyright (c) xNexus-ACS. All rights reserved.
+// Licensed under the CC BY-SA 3.0 license.
+// </copyright>
+// -----------------------------------------------------------------------
 
 namespace Kits
 {
+    using System.Collections.Generic;
+    using System.ComponentModel;
+    using Exiled.API.Interfaces;
+    using Kits.Models;
+
+    /// <inheritdoc />
     public class Config : IConfig
     {
+        /// <inheritdoc />
         public bool IsEnabled { get; set; } = true;
-        public string KitSafePermission { get; set; } = "kits.safe";
-        public string KitEuclidPermission { get; set; } = "kits.euclid";
-        public string KitKetterPermission { get; set; } = "kits.ketter";
-        public string KitApollyonPermission { get; set; } = "kits.apollyon";
-        
-        public List<ItemType> KitSafe { get; set; } = new List<ItemType>()
-        {
-        };
 
-        public List<ItemType> KitEuclid { get; set; } = new List<ItemType>()
+        /// <summary>
+        /// Gets or sets the kits that are available.
+        /// </summary>
+        [Description("The kits that are available.")]
+        public List<Kit> Kits { get; set; } = new()
         {
-        };
-
-        public List<ItemType> KitKetter { get; set; } = new List<ItemType>()
-        {
-        };
-        public List<ItemType> KitApollyon { get; set; } = new List<ItemType>()
-        {
-        };
-
-        public List<RoleType> RestrictedRolesForKits { get; set; } = new List<RoleType>()
-        {
-            RoleType.ClassD,
-            RoleType.Scientist
+            new("Safe", "kits.safe"),
+            new("Euclid", "kits.euclid"),
+            new("Keter", "kits.keter"),
+            new("Apollyon", "kits.apollyon"),
         };
     }
 }
