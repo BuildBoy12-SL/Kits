@@ -2,7 +2,6 @@
 
 This plugin create kits for the people who have the perms indicated in Permissions.
 You can only choose one Kit per round if you have the 4 kits permissions.
-The kits are only for MTFs!
 
 ## Permissions
 
@@ -22,6 +21,7 @@ The kits are only for MTFs!
 - kit_euclid: List of items (Empty | See resources channel on EXILED Discord to get the ItemTypes)
 - kit_ketter: List of items (Empty | See resources channel on EXILED Discord to get the ItemTypes)
 - kit_apollyon: List of items (Empty | See resources channel on EXILED Discord to get the ItemTypes)
+- restricted_roles_for_kits: List of roles (Empty | See resources channel on EXILED discord to get the RoleTypes)
 
 ## Commands
 
