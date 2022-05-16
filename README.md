@@ -21,7 +21,7 @@ You can only choose one Kit per round if you have the 4 kits permissions.
 - kit_euclid: List of items (Empty | See resources channel on EXILED Discord to get the ItemTypes)
 - kit_ketter: List of items (Empty | See resources channel on EXILED Discord to get the ItemTypes)
 - kit_apollyon: List of items (Empty | See resources channel on EXILED Discord to get the ItemTypes)
-- restricted_roles_for_kits: List of roles (Empty | See resources channel on EXILED discord to get the RoleTypes)
+- restricted_roles_for_kits: List of roles (ClassD and Scientist (Default) | See resources channel on EXILED discord to get the RoleTypes)
 
 ## Commands
 
